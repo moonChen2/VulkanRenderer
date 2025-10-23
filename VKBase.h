@@ -23,6 +23,17 @@ namespace vulkan{
         //window surface
         VkSurfaceKHR surface;
 
+        //physical device
+        VkPhysicalDevice physicalDevice;
+        VkPhysicalDeviceProperties physicalDeviceProperties;
+        VkPhysicalDeviceMemoryProperties physicalDeviceMemoryProperties;
+        std::vector<VkPhysicalDevice> availablePhysicalDevices;
+        //logical device
+        VkDevice device;
+
+        //Queue
+
+
         static void AddLayerOrExtension(std::vector<const char*>& container, const char* name){
             for(auto& i : container){
                 //already exist
