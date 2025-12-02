@@ -4,11 +4,12 @@ project(VulkanRenderer)
 set(CMAKE_CXX_STANDARD 23)
 
 add_subdirectory(thirdParty/glm)
+add_subdirectory(thirdParty/glfw-3.4)
 
 add_executable(VulkanRenderer main.cpp)
 
 # 添加 GLFW3 预编译库
-find_package(glfw3 3.4 REQUIRED)
+#find_package(glfw3 3.4 REQUIRED)
 # Vulkan
 find_package(Vulkan REQUIRED)
 
